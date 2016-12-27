@@ -1,0 +1,4 @@
+node_modules/
+.deploy_si/
+.meteor/
+.DS_Store

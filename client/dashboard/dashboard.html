@@ -1,0 +1,10 @@
+<template name="dashboard">
+    {{#if currentUser}}
+    <div class='row'>
+        <div class='col-md-12 col-centered'>
+            <div class='earnings-title'>Current earnings:</div>
+            <div class='earnings-total'>${{earnings}}</div>
+        </div>
+    </div>
+    {{/if}}
+</template>

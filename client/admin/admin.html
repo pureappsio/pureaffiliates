@@ -1,0 +1,21 @@
+<template name="admin">
+
+{{#if isAdmin}}
+
+<h3>API Key</h3>
+
+<div class='row'>
+
+  <div class='col-md-3'>
+    <button id='generate-key' class='btn btn-block btn-primary'>Generate API Key</button>
+  </div>
+
+  <div class='col-md-3'>
+    <span id='api-key'>{{key}}</span>
+  </div>
+
+</div>
+
+{{/if}}
+
+</template>
