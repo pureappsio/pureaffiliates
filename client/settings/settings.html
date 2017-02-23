@@ -1,22 +1,22 @@
 <template name="settings">
-
-{{#if currentUser}}
-
-<h3>Affiliate Code</h3>
-
-<div class='row'>
-
-  <div class='col-md-3'>
-    <button id='generate-code' class='btn btn-block btn-primary'>Generate Code</button>
-  </div>
-
-  <div class='col-md-4'>
-    Your affiliate code: {{affiliateCode}}
-  </div>
-  
-
-</div>
-
-{{/if}}
-
+    {{#if currentUser}}
+    <h3>Affiliate Code</h3>
+    <div class='row'>
+        <div class='col-md-3'>
+            <button id='generate-code' class='btn btn-block btn-primary'>Generate Code</button>
+        </div>
+        <div class='col-md-4'>
+            Your affiliate code: {{affiliateCode}}
+        </div>
+    </div>
+    <h3>Paypal Account</h3>
+    <div class='row'>
+        <div class='col-md-3'>
+            <input id='paypal-email' class='form-control' placeholder="Your Paypal email..." value={{email}}>
+        </div>
+        <div class='col-md-3'>
+            <button id='set-paypal' class='btn btn-block btn-primary'>Set Paypal Email</button>
+        </div>
+    </div>
+    {{/if}}
 </template>

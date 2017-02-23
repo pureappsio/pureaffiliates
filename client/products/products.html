@@ -1,0 +1,10 @@
+<template name="products">
+    {{#if currentUser}}
+    <h3>Products</h3>
+    <div class='row column-bold'>
+        <div class='col-md-5'>Name</div>
+        <div class='col-md-1'>Price</div>
+        <div class='col-md-6'>Sales Page URL</div>
+    </div>
+    {{#each allProducts}}{{> product}}{{/each}} {{/if}}
+</template>
